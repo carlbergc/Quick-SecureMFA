@@ -26,16 +26,16 @@ It's a full-stack MFA system built with React, Flask, PostgreSQL, and Redis — 
 | Authenticator | AppExpo (React Native Web)                    |
 | Database      | PostgreSQL (pgAdmin4) / SessionsRedis (Docker)|
 
-Terminal 1 — backend:
-cd \backend
+Terminal 1 — backend:  
+cd \backend  
 python app.py
 
-Terminal 2 — frontend:
-cd \frontend
+Terminal 2 — frontend:  
+cd \frontend  
 npm run dev
 
-Terminal 3 — mobile:
-cd \mobile
+Terminal 3 — mobile:  
+cd \mobile  
 npx expo start
 
 
