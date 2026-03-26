@@ -3,7 +3,6 @@ A personal project built to develop hands-on security hardening skills while bui
 It's a full-stack MFA system built with React, Flask, PostgreSQL, and Redis — including a separate web-based authenticator app that simulates a mobile authenticator for local testing.
 
 ## This project has 3 endpoints: Frontend, Backend, and Mobile Authenticator.
-
 **Frontend** - localhost:5173 -> Web interaction layer  
 **Backend** - localhost:5000 -> Handles connection logic and SQL database  
 **Authenticator App** - localhost:8080 -> Simulates mobile authentication for testing
