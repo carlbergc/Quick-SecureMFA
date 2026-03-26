@@ -26,6 +26,21 @@ It's a full-stack MFA system built with React, Flask, PostgreSQL, and Redis — 
 | Authenticator | AppExpo (React Native Web)                    |
 | Database      | PostgreSQL (pgAdmin4) / SessionsRedis (Docker)|
 
+Terminal 1 — backend:
+```
+cd \backend
+python app.py
+
+Terminal 2 — frontend:
+cd \frontend
+npm run dev
+
+Terminal 3 — mobile:
+```
+cd \mobile
+npx expo start
+
+
 Now, this is only the service of an authenticator app and website login. The main goal of this project is to use secure methods to prevent the data from being accessed easily. 
 So I have some goals to learn: 
 - Ensure the code generated cannot be accessed through inspect element looking at the plaintext
