@@ -1,7 +1,8 @@
 # Quick-SecureMFA
 This is a project I made to work on my security hardening skills along with attempting to make a fast multifactor authenticator login process
 
-# My project has 3 endpoints: Frontend, Backend, and Mobile Authenticator. #
+My project has 3 endpoints: Frontend, Backend, and Mobile Authenticator.
+
 Frontend - localhost:5173 - this is the web interaction
 Backend - localhost:5000 - handler for connecting logic and SQL db
 Authenticator app - localhost:8080 - simulates mobile authenticator for testing
