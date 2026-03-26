@@ -21,7 +21,6 @@ Authenticator app - localhost:8080 - simulates mobile authenticator for testing
 
 ## Tools Used
 | Layer         | Technology                                      |
-|--------------|--------------------------------------------------|
 | Frontend     | React (Vite)                                     |
 | Backend      | Python (Flask)                                   |
 | Authenticator| AppExpo (React Native Web)                       |
