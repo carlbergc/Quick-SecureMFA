@@ -4,11 +4,12 @@ It's a full-stack MFA system built with React, Flask, PostgreSQL, and Redis — 
 
 My project has 3 endpoints: Frontend, Backend, and Mobile Authenticator.
 
-- **Frontend** - localhost:5173  
+- **Frontend** - localhost:5173
   Web interaction layer
 
 - **Backend** - localhost:5000  
-  Handles connection logic and SQL database
+  Handles connection logic and SQL database 
+  Web interaction layer
 
 - **Authenticator App** - localhost:8080  
   Simulates mobile authenticator for testing
