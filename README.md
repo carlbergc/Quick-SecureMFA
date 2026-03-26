@@ -8,7 +8,7 @@ My project has 3 endpoints: Frontend, Backend, and Mobile Authenticator.
   
 **Backend** - localhost:5000 -- Handles connection logic and SQL database 
   
-**Authenticator App** -- localhost:8080 - Simulates mobile authenticator for testing
+**Authenticator App** - localhost:8080 -- Simulates mobile authenticator for testing
 
 ## Login Flow
 1. User enters username & password on the frontend
