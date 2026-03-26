@@ -20,11 +20,12 @@ Authenticator app - localhost:8080 - simulates mobile authenticator for testing
 9. Login is verified
 
 ## Tools Used
-| Layer         | Technology                                      |
-| Frontend     | React (Vite)                                     |
-| Backend      | Python (Flask)                                   |
-| Authenticator| AppExpo (React Native Web)                       |
-| Database     | PostgreSQL (pgAdmin4) / SessionsRedis (Docker)   |
+| Layer         | Technology                                    |
+|---------------|-----------------------------------------------|
+| Frontend      | React (Vite)                                  |
+| Backend       | Python (Flask)                                |
+| Authenticator | AppExpo (React Native Web)                    |
+| Database      | PostgreSQL (pgAdmin4) / SessionsRedis (Docker)|
 
 Now, this is only the service of an authenticator app and website login. The main point of this project is to use secure methods to prevent the data from being accessed easily. So I have some goals to learn: 
 - Ensure the code generated cannot be accessed through inspect element looking at the plaintext
