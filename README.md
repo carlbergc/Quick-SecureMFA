@@ -8,7 +8,7 @@ Frontend - localhost:5173 - this is the web interaction
 Backend - localhost:5000 - handler for connecting logic and SQL db
 Authenticator app - localhost:8080 - simulates mobile authenticator for testing
 
-## Login Flow ##
+## Login Flow
 1. User enters username & password on the frontend
 2. Backend verifies against bcrypt hash in PostgreSQL
 3. Redis stores a temporary session token (expires within 120 seconds)
@@ -19,12 +19,13 @@ Authenticator app - localhost:8080 - simulates mobile authenticator for testing
 8. Backend verifies the code -> creates a session token (expires in 1 hour)
 9. Login is verified
 
-## Tools Used ##
-Layer           |   Technology
-FrontendReact   |   Vite
-BackendPython   |   Flask
-Authenticator   |   AppExpo (React Native Web)
-Database        |   PostgreSQL (pgAdmin4) / SessionsRedis (Docker)
+## Tools Used
+| Layer         | Technology                                      |
+|--------------|--------------------------------------------------|
+| Frontend     | React (Vite)                                     |
+| Backend      | Python (Flask)                                   |
+| Authenticator| AppExpo (React Native Web)                       |
+| Database     | PostgreSQL (pgAdmin4) / SessionsRedis (Docker)   |
 
 Now, this is only the service of an authenticator app and website login. The main point of this project is to use secure methods to prevent the data from being accessed easily. So I have some goals to learn: 
 - Ensure the code generated cannot be accessed through inspect element looking at the plaintext
