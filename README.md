@@ -27,13 +27,13 @@ It's a full-stack MFA system built with React, Flask, PostgreSQL, and Redis — 
 | Database      | PostgreSQL (pgAdmin4) / SessionsRedis (Docker)|
 
 ## Installation
-Terminal 1 — backend:  
+Terminal 1 - backend:  
 python app.py
 
-Terminal 2 — frontend:  
+Terminal 2 - frontend:  
 npm run dev
 
-Terminal 3 — mobile:  
+Terminal 3 - mobile:  
 npx expo start
 
 
