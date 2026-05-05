@@ -38,8 +38,8 @@ npx expo start
 
 #### This is only the service of an authenticator app and website login. The main goal of this project is to use secure methods to prevent the data from being accessed easily. 
 So I have some goals to learn: 
-- Ensure the code generated cannot be accessed through inspect element looking at the plaintext
-- Ensure connection is HTTPS to securely hide info
+- Ensure the code generated cannot be accessed through inspect element looking at the plaintext (done)
+- Ensure connection is HTTPS to securely hide info (done)
 - Prevent brute force attacks by lowering login attempts for a specific user
 
 ## Security Progress
@@ -50,12 +50,12 @@ So I have some goals to learn:
 - Session expiry — Redis TTL (120s temp, 1hr session)
 
 **Planned:**
-- Rate limiting — Flask-Limiter
-- Account lockout — Redis failed attempt counter
+- Rate limiting - Flask-Limiter
+- Account lockout - Redis failed attempt counter
 - Logout / session revocation — Redis key deletion route
-- Input validation — Server-side sanitization
+- Input validation - Server-side sanitization
 - HTTPS — SSL cert + domain (production only)
-- CSRF protection — Flask-WTF tokens
+- CSRF protection - Flask-WTF tokens
 
 ## API Routes
 | Method | Route | Description |
