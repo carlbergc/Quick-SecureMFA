@@ -18,6 +18,11 @@ It's a full-stack MFA system built with React, Flask, PostgreSQL, and Redis — 
 8. Backend verifies the code -> creates a session token (expires in 1 hour)
 9. Login is verified
 
+## Guide Through:
+First the user opens the frontend and enters their username and password to begin the login process.
+![image1](quickmfaSS1.png)
+
+
 ## Tools Used
 | Layer         | Technology                                    |
 |---------------|-----------------------------------------------|
