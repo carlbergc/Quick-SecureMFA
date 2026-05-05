@@ -21,6 +21,19 @@ It's a full-stack MFA system built with React, Flask, PostgreSQL, and Redis — 
 ## Guide Through:
 First the user opens the frontend and enters their username and password to begin the login process.
 ![image1](mobile/assets/quickmfaSS1.png)
+The user can create an account where the password and username are saved within a PostgreSQL connected database. 
+![image2](mobile/assets/quickmfaSS2.png)
+The backend then checks the entered password against a bcrypt-hashed version stored in PostgreSQL to verify it's correct.
+![image3](mobile/assets/quickmfaSS3.png)
+The user can now log in with the credentials, and once the password is verified, Redis stores a temporary session token that expires in 120 seconds to keep the window short.
+![gif1](mobile/assets/quickmfa1.gif)
+The user then clicks "Send Code to App" to trigger the generation of a one-time code. 
+![gif2](mobile/assets/quickmfa2.gif)
+This will then have the user login to the mobile authenticator to recieve the 6-digit code. 
+![gif3](mobile/assets/quickmfa3.gif)
+Finally, entering the code into the frontend allows the user access into their account. The user is now fully authenticated and granted access.
+
+
 
 
 ## Tools Used
