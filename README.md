@@ -20,7 +20,7 @@ It's a full-stack MFA system built with React, Flask, PostgreSQL, and Redis — 
 
 ## Guide Through:
 First the user opens the frontend and enters their username and password to begin the login process.
-![image1](Mobile/assets/quickmfaSS1.png)
+![image1](mobile/assets/quickmfaSS1.png)
 
 
 ## Tools Used
