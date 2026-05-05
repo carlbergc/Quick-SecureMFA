@@ -8,21 +8,20 @@ It's a full-stack MFA system built with React, Flask, PostgreSQL, and Redis — 
 **Authenticator App** - localhost:8080 -> Simulates mobile authentication for testing
 
 ## Login Flow
-1. User enters username & password on the frontend or creates new account
+1. The user opens the frontend and enters their username and password to begin the login process.
 ![image1](mobile/assets/quickmfaSS1.png)
+The user can create an account where the password and username are saved within a PostgreSQL connected database. 
 ![image2](mobile/assets/quickmfaSS2.png)
-3. Backend verifies against bcrypt hash in PostgreSQL
+2. The backend then checks the entered password against a bcrypt-hashed version stored in PostgreSQL to verify it's correct.
 ![image3](mobile/assets/quickmfaSS3.png)
-4. Redis stores a temporary session token (expires within 120 seconds)
-5. ![gif1](mobile/assets/quickmfa1.gif)
-6. User clicks "Send Code to App" to generate a code
-7. ![gif2](mobile/assets/quickmfa2.gif)
-8. Backend generates a TOTP code -> stores in Redis
-9. Authenticator app polls every 2 seconds and displays the code
-10. User types the code into the frontend
+3. The user can now log in with the credentials, and once the password is verified, Redis stores a temporary session token that expires in 120 seconds to keep the window short.
+![gif1](mobile/assets/quickmfa1.gif)
+4. The user then clicks "Send Code to App" to trigger the generation of a one-time code. 
+![gif2](mobile/assets/quickmfa2.gif)
+5. The user logs into the mobile authenticator app, which polls the backend every 2 seconds 
+to receive and display the 6-digit code. 
 ![gif3](mobile/assets/quickmfa3.gif)
-12. Backend verifies the code -> creates a session token (expires in 1 hour)
-13. Login is verified
+6. Finally, entering the code into the frontend allows the user access into their account. The user is now fully authenticated and granted access.
 
 ## Tools Used
 | Layer         | Technology                                    |
