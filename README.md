@@ -41,8 +41,7 @@ npm run dev
 Terminal 3 - Authenticator App:  
 npx expo start
 
-#### This is only the service of an authenticator app and website login. The main goal of this project is to use secure methods to prevent the data from being accessed easily. 
-So I have some goals to learn: 
+I have more goals to learn: 
 - Ensure the code generated cannot be accessed through inspect element looking at the plaintext (done)
 - Ensure connection is HTTPS to securely hide info (done)
 - Prevent brute force attacks by lowering login attempts for a specific user
